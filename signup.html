@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Signup</h1>
+    <title>HTML fundaments</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/sige.css">
+    <link rel="stylesheet" href="css/layout.css">
     
-    <header>
-        <h1 style="color: brown;"></h1>
 
+</head>
+
+<body>
+    <header>
+        <h2 style="color: #2e28d2"> Learning HTML with CSS </h2>
         <nav>
-            <a href="">Profile</a>
-            <a href="signup.html">Sign up</a>
+            <a href="">Components</a>
+            <a href="">Project</a>
+            <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+            <a href="signup.html">Sign Up</a>
             <a href="">Sign In</a>
         </nav>
+        <div class="dropdown">
+            <button class="btn-menu"><span class="material-symbols-outlined">menu</span> </button>
+            <div class="dropdown-content">
+                <a href="components.html">Components</a>
+                <a href="css/project.html">Project</a>
+                <a href="">Profile</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="">Sign In</a>
+            </div>
+        </div>
 
     </header>
 
-
-    
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Sign Up</h3>
+                        <div class="card-body">
+                            <p>Please fill the following inputs</p>
+                            <div class="input-wrapper">
+                                <label for="name">Name</label>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="username">Username</label>
+                                <input id="username" type="text">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="password">Password</label>
+                                <input id="password" type="password">
+                            </div>
+                            <button id="btn-click">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script/function.js"></script>
 </body>
 </html>

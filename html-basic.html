@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML fundaments</title>
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
-    
-
         * {
             font-family: 'Poppins';
             box-sizing: border-box;
@@ -21,7 +20,7 @@
             padding: 0;
             background: #f2f2f2;
         }
-        
+
         header {
             position: sticky;
             top: 0;
@@ -108,7 +107,7 @@
 
         }
 
-         .dropdown-content {
+        .dropdown-content {
             display: none;
             position: absolute;
             right: 0;
@@ -148,7 +147,7 @@
             color: white;
         }
 
-        
+
         main {
             display: flex;
             gap: 10px;
@@ -162,7 +161,7 @@
             border-radius: 20px;
         }
 
-        
+
 
         .profile-card {
             display: flex;
@@ -204,13 +203,10 @@
             color: #333;
             line-height: 1.6;
         }
-
-
-
     </style>
-   
+
 </head>
-   
+
 <body>
     <header>
         <h2 style="color: #2e28d2"> Learning HTML with CSS </h2>
@@ -218,26 +214,26 @@
             <a href="">Components</a>
             <a href="">Project</a>
             <a href=""><i class="fa-solid fa-user"></i>Profile</a>
-            <a href="">Sign Up</a>
-            <a href="">Sign In</a> 
+            <a href="signup.html">Sign Up</a>
+            <a href="">Sign In</a>
         </nav>
 
         <div class="dropdown">
             <button class="btn-menu"><span class="material-symbols-outlined">menu</span> </button>
             <div class="dropdown-content">
-                <a href="">Components</a>
-                <a href="">Project</a>
+                <a href="components.html">Components</a>
+                <a href="css/project.html">Project</a>
                 <a href="">Profile</a>
-                <a href="">Sign Up</a>
+                <a href="signup.html">Sign Up</a>
                 <a href="">Sign In</a>
             </div>
         </div>
 
     </header>
-    
+
     <main class="profile-card">
         <div class="profile-left">
-            <img src="images/SUPERMAX.webp" alt="maxverstappen">
+            <img src="image/SUPERMAX.webp" alt="maxverstappen">
         </div>
         <div class="profile-right">
 
@@ -249,20 +245,23 @@
 
             <p><strong>Year Level:</strong> Red Bull Level</p>
 
-            <p><strong>Address:</strong> Verstappen moved to Monaco in October 2015, right after turning 18. He has lived there continuously ever since
+            <p><strong>Address:</strong> Verstappen moved to Monaco in October 2015, right after turning 18. He has
+                lived there continuously ever since
 
             <p class="profile-desc">
-                Max Verstappen is a four-time consecutive Formula 1 World Champion, with titles from 2021 through 2024.</p>
+                Max Verstappen is a four-time consecutive Formula 1 World Champion, with titles from 2021 through 2024.
+            </p>
 
             <p class="profile-desc">
                 He holds numerous F1 records:
-                Youngest F1 entrant, youngest race winner, most podiums in a season, longest streaks of wins, poles and points, among others.
+                Youngest F1 entrant, youngest race winner, most podiums in a season, longest streaks of wins, poles and
+                points, among others.
             </p>
 
         </div>
     </main>
 
-    
+
 </body>
 
 </html>
