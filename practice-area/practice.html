@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="color-scheme" content="dark" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }   
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: white;
+            }
+        }
+
+
+        .card {
+            max-width: 1000px;
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+
+        }
+
+        h1 {
+            align-items: center;
+            color: #5B3A21;
+        }
+
+        h2 {
+            font-style: italic;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial, Verdana, sans-serif;
+            word-spacing: 1px;
+        }
+
+        .supermax {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50px;
+            box-shadow: #5B3A21;
+        }
+
+        .hehe {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: #5B3A21;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+
+            list-style-type: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        a:hover {
+            color: red;
+
+        }
+
+        a {
+            margin-top: 70;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .col-1-3,
+        .col-4-6,
+        .col-7-9 {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="card">
+        <h1>Merelie Lloyd L. Bincal</h1>
+        <h2>Do what you can, with what you have, where you are - Theodore Roosevelt</h2>
+        <p>I like to play instrument sometimes and love to spent time with friends</p>
+        <img class="supermax" src="../image/SUPERMAX.webp" alt="SUPERMAX">
+        <ul>
+            <li>Playing</li>
+            <li>Coding</li>
+            <li>Watching Movies</li>
+        </ul>
+        <a href="https://www.w3schools.com/" target="_blank">My Favorite website to learn coding</a>
+
+        </div>
+    </main>
+    <div class="row">
+        <div class="col-1-3">
+            <h3>Al Francis</h3>
+            <img class="hehe" src="../practice-area/alfrancis.jpg" alt="alfrancis">
+            <p></p>
+        </div>
+        <div class="col-4-6">
+            <h3>Melvie Amahan</h3>
+            <img class="hehe" src="../practice-area/amahan.jpg" alt="amahan">
+            <p></p>
+        </div>
+        <div class="col-7-9">
+            <h3>Carl Patrick</h3>
+            <img class="hehe" src="../practice-area/papat.jpg" alt="papat">
+            <p></p>
+        </div>
+</body>
+
+</html>
