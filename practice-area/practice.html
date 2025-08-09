@@ -16,7 +16,7 @@
             min-height: 100vh;
             margin: 0;
             overflow-x: hidden;
-        }   
+        }
 
         @media (prefers-color-scheme: dark) {
             body {
@@ -96,15 +96,25 @@
             gap: 20px;
             padding: 0 20px;
             box-sizing: border-box;
+            flex-wrap: wrap;
+            align-content: center;
         }
 
-        .col-1-3,
-        .col-4-6,
-        .col-7-9 {
+        .friend-box {
+            background: #5B3A21;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(204, 17, 17, 0.663);
             text-align: center;
             flex: 1;
             padding: 10px;
             box-sizing: border-box;
+        }
+
+        section {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 1000px;
         }
     </style>
 
@@ -122,25 +132,25 @@
             <li>Watching Movies</li>
         </ul>
         <a href="https://www.w3schools.com/" target="_blank">My Favorite website to learn coding</a>
-
-        </div>
     </main>
-    <div class="row">
-        <div class="col-1-3">
-            <h3>Al Francis</h3>
-            <img class="hehe" src="../practice-area/alfrancis.jpg" alt="alfrancis">
-            <p></p>
-        </div>
-        <div class="col-4-6">
-            <h3>Melvie Amahan</h3>
-            <img class="hehe" src="../practice-area/amahan.jpg" alt="amahan">
-            <p></p>
-        </div>
-        <div class="col-7-9">
-            <h3>Carl Patrick</h3>
-            <img class="hehe" src="../practice-area/papat.jpg" alt="papat">
-            <p></p>
-        </div>
+    <section>
+        <div class="row">
+            <div class="friend-box">
+                <h3>Al Francis</h3>
+                <img class="hehe" src="../practice-area/alfrancis.jpg" alt="Photo of Al Francis">
+                <p></p>
+            </div>
+            <div class="friend-box">
+                <h3>Melvie Amahan</h3>
+                <img class="hehe" src="../practice-area/amahan.jpg" alt="Photo of Melvie Amahan">
+                <p></p>
+            </div>
+            <div class="friend-box">
+                <h3>Carl Patrick</h3>
+                <img class="hehe" src="../practice-area/papat.jpg" alt="Photo of Carl Patrick">
+                <p></p>
+            </div>
+    </section>
 </body>
 
 </html>
