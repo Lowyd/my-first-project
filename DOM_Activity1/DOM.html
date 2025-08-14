@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 50px;
+            height: 150px;
+            width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .container p {
+            border-left: 6px solid rgba(240, 24, 24, 0.133);
+            padding-left: 12px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="row">
+        <div id="container" class="container">
+            <h1 id="h1">DOM Makeover Challenge</h1>
+            <p id="parag">This is a simple webpage that needs some style!</p>
+            <button id="btn-change">Change Text</button>
+            <button id="btn-color">Change Background</button>
+        </div>
+    </div>
+    
+    <script>
+        
+        const color = ["black", "red", "violet", "brown"];
+
+        const btn = document.getElementById("btn-change");
+        const btnColor = document.getElementById("btn-color");
+
+        btn.addEventListener("click", function () {
+            const header = document.getElementById("h1");
+            const hellow = document.getElementById("parag");
+
+            header.innerText = "I manipulate the DOM!";
+            hellow.innerText = "JavaScript can do everything!";
+
+        });
+
+        const cont = document.getElementById("container");
+
+        let index = 0;
+
+        btnColor.addEventListener("click", function () {
+            const pTag = document.getElementById("parag");
+            const header = document.getElementById("h1");
+            const bodyColor = document.getElementById("body");
+
+
+            header.style.color = "blue";
+            pTag.style.color = "blue";
+            cont.style.backgroundColor = color[index] ;
+            index++;
+            if (index == 4) {
+                index = 0;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
